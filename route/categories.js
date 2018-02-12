@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const { Pool }= require('pg');
-const connectionString = process.env.DATABASE_URL || 'postgresql://test:test@localhost:5432/scapic_test';
+const connectionString = process.env.DATABASE_URL || 'postgres://hovyhhivbrdrii:fcd66b27281e3b988191182971a9799330774d56dfae461ee76ef3dc0084a8d4@ec2-184-73-174-171.compute-1.amazonaws.com:5432/d9ivpkdnc1lg54';
 
 
 router.post('/', function(req, res) {
