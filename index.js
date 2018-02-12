@@ -4,11 +4,11 @@ var app            =        express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static(__dirname);	
+app.use(express.static(__dirname));	
 app.set('port', (process.env.PORT || 5000))
 
 app.get('/', function (req, res) {
-  res.send('index.html')
+  res.sendFile('index.html')
 })
 
 app.use('/api/categories',require('./route/categories.js'));
