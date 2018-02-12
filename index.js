@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 5000))
 
 app.get('/', function (req, res) {
-  res.sendFile('index.html')
+  res.sendFile('./index.html')
 })
 
 app.use('/api/categories',require('./route/categories.js'));
