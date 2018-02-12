@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 5000))
 
 app.get('/', function (req, res) {
-  res.send('Hello Scapic !!!')
+  res.sendFile('index.html')
 })
 
 app.use('/api/categories',require('./route/categories.js'));
