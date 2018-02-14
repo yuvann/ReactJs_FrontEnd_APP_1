@@ -8,7 +8,7 @@ app.use(express.static(__dirname));
 app.set('port', (process.env.PORT || 5000))
 
 app.get('/', function (req, res) {
-  res.sendFile('index.html')
+  res.send('Welcome Guys')
 })
 
 app.use('/api/categories',require('./route/categories.js'));
