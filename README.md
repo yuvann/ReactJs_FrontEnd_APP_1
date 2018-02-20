@@ -2,6 +2,6 @@
 
 To render the app
 
-npm i
-npm start 
-open index.html
+npm i <br>
+npm start <br>
+open index.html <br>
